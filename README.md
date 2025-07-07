@@ -9,6 +9,33 @@ This project is the code behind a demo built for **RNE Tunisia**, in collaborati
 We built a **modular pipeline** that takes the user from idea to name validation using simple logic, rule-checking, and semantic filtering. Our aim was to keep the process transparent so that users can understand the decision-making logic at every step.
 
 ---
+✅ Stage 1: Symbol and Number Check
+
+Ensures no illegal characters or only digits are used in the company name.
+
+✅ Stage 2: Cursing & Restricted Words Filter
+
+Detects inappropriate, offensive, or misleading words (in French & Arabic) like institutional terms (e.g., "Police", "Banque Centrale").
+
+✅ Stage 3: Legal Type Compliance
+
+Validates the name based on the legal company type:
+
+e.g., SARL, SUARL, Société en nom collectif, foreign branches.
+
+Suggests corrections or additions to match legal structure requirements.
+
+✅ Stage 4: Similar Name Detection
+
+Uses fuzzy matching and semantic analysis to detect if a proposed name is too similar to existing companies (from a provided dataset).
+
+Prevents intentional misspelling or impersonation.
+
+✅ Impact Evaluation
+
+Evaluates whether the name is vague, misleading, or unsuitable based on the company activity.
+
+Suggests better names (GPT-4/Gemini-powered).
 
 ## 🛠️ Project Structure
 
